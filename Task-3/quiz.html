@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   <header>
+    <nav class="navbar">
+      <div class="logo">🌐 Creativity</div>
+      <ul class="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/gallery.html">Gallery</a></li>
+        <li><a href="/joke.html">Jokes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<div id="quiz-container">
+    <div id="question">Loading question...</div>
+    <button class="btn true-btn" onclick="submitAnswer('A')">True</button>
+    <button class="btn false-btn" onclick="submitAnswer('B')">False</button>
+    <button class="submit-btn" onclick="showScore()" id="submit-btn" style="display:none;">Submit Answers</button>
+    <p id="quiz-score" class="score-text"></p>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

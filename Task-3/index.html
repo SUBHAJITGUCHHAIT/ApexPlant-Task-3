@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WebDev Task 3</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">🌐 Creativity</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="/gallery.html">Gallery</a></li>
+        <li><a href="/quiz.html">Quiz</a></li>
+        <li><a href="/joke.html">Jokes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<main>
+  <section id="home" class="section">
+    <h1>Welcome to My Art Space</h1>
+    <div class="container">
+       <div><span id="element"></span></div>
+    </div>
+  </section>
+</main>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+    var typed = new Typed('#element', {
+      strings: ['The future belongs to', 'Those who imagine it ','Build it relentlessly.'],
+      typeSpeed: 30,
+      loop:true
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
